@@ -1,0 +1,24 @@
+{
+  "name": "ai-todos",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "db:push": "cd apps/api && npm run db:push"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.3",
+    "turbo": "^1.10.14"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
